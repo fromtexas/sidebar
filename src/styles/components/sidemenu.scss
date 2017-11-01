@@ -1,0 +1,46 @@
+.sidemenu {
+  padding: .5rem;
+  background-color: #2f2f2f;
+  position: absolute;
+  width: 20rem;
+  right: -20rem;
+  top: -10rem;
+  font-weight: 400;
+}
+
+.form-check-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fff;
+    background-color: #2f2f2f;
+    position: relative;
+    border-radius: 2px;
+    margin-bottom: -1px;
+    z-index: 10;
+    margin-top: .4rem;
+    position: relative;
+    margin-right: .5rem;
+    margin-left: -.5rem;
+}
+
+.form-check-input:checked:before {
+  opacity: 1;
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 9px;
+  background: transparent;
+  border: 2px solid #fff;
+  border-top: none;
+  border-left: none;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 1px;
+  bottom: 0;
+  left: 4px;
+  right: 0;
+}

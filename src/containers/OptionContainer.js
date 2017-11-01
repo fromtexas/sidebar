@@ -1,0 +1,28 @@
+import React, {Component} from 'react';
+import Option from '../components/Option';
+
+class OptionContainer extends Component {
+  constructor () {
+    super();
+    this.state = {
+      stPersonal: false
+    };
+  }
+  change () {
+    this.setState({
+      stPersonal: !this.state.stPersonal
+    })
+  }
+  componentWillReceiveProps (nextProps) {
+    this.setState((prevState, props)=>{
+      return {
+        stPersonal:props.status
+      }
+    })
+  }
+  render () {
+    return <Option change={this.change.bind(this)} st={this.state.stPersonal} {...this.props} />
+  }
+}
+
+export default OptionContainer;

@@ -1,0 +1,16 @@
+.check-all {
+  width: 100%;
+  border-radius: 3px;
+  background-color: #7d7d7d;
+  cursor: pointer;
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+  input {
+    background-color: #fff;
+    &:checked{
+      &:before {
+        border-color: #333;
+      }
+    }
+  }
+}
