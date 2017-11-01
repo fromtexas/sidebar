@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Option = ({name, st, change}) => {
-
+  //console.log('rendered');
   return (
     <li>
       <label className="form-check-label menu-options">

@@ -7,7 +7,7 @@ export const getAll = (options) => ({
 });
 
 export const recieveAll = () => {
-  return (dispatch, getState) => {
+  return (dispatch) => {
     return get().then((res) => {
       dispatch(getAll(res))
     });

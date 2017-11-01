@@ -6,9 +6,9 @@ const Product = ({showFun, showStatus, hideFun, background, icon}) => {
 
   const renderMenu = () => {
     if (!showStatus){
-      return
+      return;
     }
-    return <Sidemenu hideMenu={hideFun} />
+    return <Sidemenu hideMenu={hideFun} />;
   };
   return (
     <li style={{backgroundColor: background}} onClick={showFun} className="product">

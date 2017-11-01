@@ -11,17 +11,17 @@ class OptionContainer extends Component {
   change () {
     this.setState({
       stPersonal: !this.state.stPersonal
-    })
+    });
   }
-  componentWillReceiveProps (nextProps) {
+  componentWillReceiveProps () {
     this.setState((prevState, props)=>{
       return {
         stPersonal:props.status
-      }
-    })
+      };
+    });
   }
   render () {
-    return <Option change={this.change.bind(this)} st={this.state.stPersonal} {...this.props} />
+    return <Option change={this.change.bind(this)} st={this.state.stPersonal} {...this.props} />;
   }
 }
 

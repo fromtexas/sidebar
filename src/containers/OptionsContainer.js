@@ -9,11 +9,12 @@ class OptionsContainer extends Component {
     super();
     this.state = {
       checkAll: false
-    }
+    };
   }
   componentDidMount () {
     this.props.dispatch(recieveAll());
   }
+
 
   change () {
     this.setState({
