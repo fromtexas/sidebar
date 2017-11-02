@@ -13,6 +13,12 @@ class OptionContainer extends Component {
       stPersonal: !this.state.stPersonal
     });
   }
+  componentDidMount () {
+    this.setState({
+      stPersonal: this.props.status
+    })
+  }
+
   componentWillReceiveProps () {
     this.setState((prevState, props)=>{
       return {
